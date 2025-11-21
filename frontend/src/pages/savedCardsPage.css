@@ -1,0 +1,67 @@
+.saved-cards-page-container {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: var(--card-bg);
+    border-radius: 10px;
+    box-shadow: var(--box-shadow-md);
+    text-align: center;
+  }
+  
+  .saved-cards-page-container .page-title {
+    font-size: 2.5em;
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .card-count {
+    font-size: 1.2em;
+    color: var(--text-light);
+    margin-bottom: 30px;
+    font-weight: bold;
+  }
+  
+  .search-bar {
+    margin-bottom: 30px;
+  }
+  
+  .search-bar input {
+    width: 100%;
+    max-width: 500px;
+    padding: 12px 15px;
+    border: 1px solid var(--border-color);
+    border-radius: 25px;
+    font-size: 1em;
+    box-shadow: var(--box-shadow-sm);
+    transition: border-color 0.2s ease;
+  }
+  
+  .search-bar input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(97, 218, 251, 0.2);
+  }
+  
+  .saved-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 25px;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .saved-cards-grid .flashcard-container {
+    height: 250px; /* Slightly taller for saved cards */
+    box-shadow: var(--box-shadow-sm);
+  }
+  
+  .no-results-message, .no-cards-message {
+    grid-column: 1 / -1; /* Span all columns */
+    padding: 40px;
+    background-color: var(--background-dark);
+    border: 1px dashed var(--border-color);
+    border-radius: 8px;
+    font-size: 1.1em;
+    color: var(--text-light);
+  }

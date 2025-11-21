@@ -1,0 +1,92 @@
+.dashboard-container {
+    padding: 40px 20px;
+    background-color: var(--card-bg);
+    border-radius: 10px;
+    box-shadow: var(--box-shadow-md);
+    margin: 30px auto;
+    max-width: 1000px;
+    text-align: center;
+  }
+  
+  .dashboard-welcome {
+    font-size: 2.8em;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+  }
+  
+  .dashboard-intro {
+    font-size: 1.2em;
+    color: var(--text-light);
+    margin-bottom: 40px;
+  }
+  
+  .dashboard-actions {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-bottom: 50px;
+  }
+  
+  .dashboard-card {
+    background-color: var(--background-dark);
+    padding: 30px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: var(--text-color);
+    box-shadow: var(--box-shadow-sm);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 220px;
+  }
+  
+  .dashboard-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .dashboard-card h2 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: var(--secondary-color);
+  }
+  
+  .dashboard-card p {
+    font-size: 1em;
+    color: var(--text-light);
+    line-height: 1.5;
+    flex-grow: 1; /* Pushes icon to bottom */
+  }
+  
+  .card-icon {
+    font-size: 3em;
+    margin-top: 15px;
+    opacity: 0.7;
+  }
+  
+  /* Specific card color themes */
+  .generate-card { border-bottom: 5px solid var(--success-color); }
+  .review-card { border-bottom: 5px solid var(--warning-color); }
+  .saved-card { border-bottom: 5px solid var(--accent-color); }
+  
+  .dashboard-tip {
+    background-color: #f0f8ff; /* Light blue background */
+    border: 1px dashed var(--primary-color);
+    padding: 25px;
+    border-radius: 8px;
+    text-align: left;
+    margin-top: 40px;
+  }
+  
+  .dashboard-tip h3 {
+    color: var(--primary-color);
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .dashboard-tip p {
+    color: var(--text-light);
+    font-style: italic;
+  }
