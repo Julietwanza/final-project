@@ -1,0 +1,76 @@
+.flashcard-form-container {
+    padding: 30px;
+    border-radius: 8px;
+    background-color: var(--card-bg);
+    box-shadow: var(--box-shadow-sm);
+    margin-bottom: 30px;
+  }
+  
+  .flashcard-form-container h3 {
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+    font-size: 1.6em;
+  }
+  
+  .notes-textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    font-size: 1em;
+    resize: vertical;
+    min-height: 180px;
+    box-sizing: border-box;
+    margin-bottom: 25px;
+    font-family: var(--font-family-sans);
+    color: var(--text-color);
+  }
+  
+  .notes-textarea::placeholder {
+    color: var(--text-light);
+  }
+  
+  .notes-textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(97, 218, 251, 0.2);
+  }
+  
+  .generate-button {
+    background-color: var(--success-color);
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+    width: auto;
+    min-width: 180px;
+  }
+  
+  .generate-button:hover:not(:disabled) {
+    background-color: #218838;
+    transform: translateY(-2px);
+  }
+  
+  .generate-button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+  }
+  
+  .error-message {
+    color: var(--danger-color);
+    background-color: #fdeded;
+    border: 1px solid var(--danger-color);
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-weight: bold;
+  }
+  
+  .loading-message {
+    color: var(--accent-color);
+    font-style: italic;
+    margin-top: 20px;
+  }
